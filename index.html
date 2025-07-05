@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="hero">
+    <nav>
+      <h1 class="logo">Rohan</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero-content">
+      <h2>Hi, I'm Rohan</h2>
+      <p class="typing"></p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </section>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images\ISRO MY PIC.jpg" alt="Rohan's Photo" class="profile-img" />
+      <div class="about-text">
+        <p>
+          I'm Rohan, a passionate AI and Machine Learning developer with experience in Flask, YOLO, computer vision, and web development. I build solutions that matter.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-python"></i>Python</div>
+      <div class="skill"><i class="fas fa-brain"></i>Machine Learning</div>
+      <div class="skill"><i class="fas fa-robot"></i>Computer Vision</div>
+      <div class="skill"><i class="fas fa-server"></i>Flask</div>
+      <div class="skill"><i class="fab fa-js"></i>JavaScript</div>
+      <div class="skill"><i class="fab fa-html5"></i>HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i>CSS</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Crime Detection System</h3>
+        <p>AI-powered app using YOLOv8 and Flask for crime image analysis.</p>
+        <a href="#">GitHub</a> | <a href="#">Live</a>
+      </div>
+      <div class="project-card">
+        <h3>R.I.Y.A Voice Assistant</h3>
+        <p>AI voice assistant with futuristic UI and voice response.</p>
+        <a href="#">GitHub</a> | <a href="#">Live</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <h2>My Journey</h2>
+    <ul class="timeline">
+      <li><strong>2022</strong>: Started with Python and web development</li>
+      <li><strong>2023</strong>: Built ML/AI projects and Flask apps</li>
+      <li><strong>2024</strong>: Created R.I.Y.A, participated in hackathons</li>
+      <li><strong>2025</strong>: Launching full portfolio and product demos</li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Awards & Hackathons</h2>
+    <ul>
+      <li>🏆 Winner - Smart India Hackathon 2024</li>
+      <li>🏅 Finalist - AI for Good Challenge</li>
+    </ul>
+  </section>
+
+  <section id="github">
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true" alt="GitHub Stats">
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p>Connect: <a href="mailto:you@example.com">Email</a> | <a href="https://linkedin.com/in/yourid">LinkedIn</a> | <a href="https://github.com/yourusername">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rohan | All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["AI/ML Developer", "Full-Stack Engineer", "Innovator"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
