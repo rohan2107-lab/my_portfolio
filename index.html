@@ -11,23 +11,42 @@
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="splash">
+  <div class="splash-content">
+    <img src="images\my_pic.jpg" alt="Rohan's Photo" class="splash-img" />
+    <h1 class="splash-text">Rohan</h1>
+  </div>
+</div>
+
+  <div class="background-blobs">
+  <span class="blob blob1"></span>
+  <span class="blob blob2"></span>
+  <span class="blob blob3"></span>
+</div>
+
   <header id="hero">
-    <nav>
-      <h1 class="logo">Rohan</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<nav>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#techradar">Techradar</a></li>
+    <li><a href="#workflow">Workflow</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#kaggle">Kaggle</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
     <section class="hero-content">
       <h2>Hi, I'm Rohan</h2>
       <p class="typing"></p>
       <a href="#projects" class="btn">Explore My Work</a>
+      <a href="resume.pdf" download class="btn glow-btn">Download Resume</a>
+
     </section>
   </header>
 
@@ -56,6 +75,41 @@
     </div>
   </section>
 
+  <section id="techradar">
+  <h2>Tech Stack Radar</h2>
+  <canvas id="radarChart" width="400" height="400"></canvas>
+</section>
+
+ <section id="workflow"> 
+  <h2>🧑‍💼 My Workflow</h2>
+   <div class="workflow-slider"> 
+    <div class="workflow-step"> 
+      <i class="fas fa-search"></i>
+       <h3>Research</h3> 
+       <p>Every project starts with clearly defining the problem, understanding user intent, and researching existing technologies, datasets, and feasibility.</p> 
+      </div>
+       <div class="workflow-step">
+         <i class="fas fa-project-diagram"></i> 
+         <h3>Design</h3> 
+         <p>I create architecture diagrams, outline model pipelines, and choose tools (Flask, TensorFlow, YOLO, etc.) to best fit the project's scope.</p>
+         </div> 
+         <div class="workflow-step">
+           <i class="fas fa-code"></i>
+            <h3>Build</h3> 
+            <p>From training ML models to building full-stack apps, I write clean, modular code with Git for version control and code hygiene.</p> 
+          </div> 
+          <div class="workflow-step"> 
+            <i class="fas fa-vial"></i>
+             <h3>Test</h3> 
+             <p>I evaluate models on accuracy, optimize UI/UX performance, and run thorough testing for stability and edge-case handling.</p>
+             </div>
+              <div class="workflow-step">
+                 <i class="fas fa-rocket"></i>
+                  <h3>Deploy</h3> 
+                  <p>Using platforms like Netlify, Render, or Vercel, I deploy and monitor usage, collect feedback, and iterate for continuous improvement.</p> 
+                </div> 
+              </div> 
+            </section>
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
@@ -70,6 +124,15 @@
         <a href="#">GitHub</a> | <a href="#">Live</a>
       </div>
     </div>
+    <!--replace-->
+    <div class="project-card" onclick="openModal('crime')"> 
+      <h3>Crime Detection System</h3>
+       <p>AI-powered app using YOLOv8 and Flask for crime image analysis.</p>
+       </div> 
+       <div class="project-card" onclick="openModal('riya')"> 
+        <h3>R.I.Y.A Voice Assistant</h3> 
+        <p>AI voice assistant with futuristic UI and voice response.</p> 
+      </div>
   </section>
 
   <section id="timeline">
@@ -90,10 +153,97 @@
     </ul>
   </section>
 
+<section id="blog">
+  <h2>My Blog</h2>
+  <div class="blog-grid">
+    <div class="workflow-slider">
+    <div class="blog-card">
+      <h3>Building R.I.Y.A – My Voice Assistant Journey</h3>
+      <p>A deep dive into building a futuristic voice assistant with Flask, speech recognition, and animated UI.</p>
+      <a href="https://yourbloglink.com/riya-journey" target="_blank">Read More →</a>
+    </div>
+    <div class="blog-card">
+      <h3>YOLOv8 in Real-World Crime Detection</h3>
+      <p>How I used computer vision for analyzing crime scenes using YOLO and OpenCV in Python.</p>
+      <a href="https://yourbloglink.com/yolo-crime" target="_blank">Read More →</a>
+    </div>
+    <div class="blog-card">
+      <h3>Top 5 ML Projects to Impress in 2025</h3>
+      <p>My list of machine learning projects that combine innovation, deployment, and impact.</p>
+      <a href="https://yourbloglink.com/top-ml-2025" target="_blank">Read More →</a>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+
+  <section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Rohan is one of the most creative and driven AI developers I’ve worked with. His work on the crime detection system was exceptional."</p>
+      <h4>— Dr. Anjali Mehra</h4>
+      <span>Professor, Data Science</span>
+    </div>
+    <div class="testimonial-card">
+      <p>"His passion for learning and solving real-world problems with ML and Flask is inspiring. A future tech leader for sure."</p>
+      <h4>— Rajat Sharma</h4>
+      <span>Senior Engineer, TCS</span>
+    </div>
+    <div class="testimonial-card">
+      <p>"Rohan was a standout contributor in our hackathon team. Always reliable, innovative, and focused."</p>
+      <h4>— Ayesha Khan</h4>
+      <span>Hackathon Teammate</span>
+    </div>
+  </div>
+</section>
+
+
   <section id="github">
     <h2>GitHub Stats</h2>
-    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true" alt="GitHub Stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=rohan2107-lab&show_icons=true" alt="GitHub Stats">
   </section>
+
+  <section id="contributions">
+  <h2>My GitHub Contributions</h2>
+  <div id="github-calendar"></div>
+</section>
+
+<section id="kaggle">
+  <h2>My Kaggle Work</h2>
+  <div class="kaggle-cards">
+    <div class="kaggle-card">
+      <h3>Road Anomaly Detection</h3>
+      <p>Built using EfficientNet and U-Net to classify road defects. Fast execution & high accuracy.</p>
+      <a href="https://www.kaggle.com/rohan2107/road-anomaly-detection" target="_blank">View Notebook →</a>
+    </div>
+    <div class="kaggle-card">
+      <h3>Blood Detection in Crime Scenes</h3>
+      <p>Used image segmentation and object detection to classify blood stains with YOLOv8 & OpenCV.</p>
+      <a href="https://www.kaggle.com/rohan2107/blood-detection-crime-scene" target="_blank">View Notebook →</a>
+    </div>
+  </div>
+  <a href="https://www.kaggle.com/rohan2107" target="_blank">
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+</a>
+</section>
+
+<section id="kaggle">
+  <h2>My Kaggle Work</h2>
+  <div class="kaggle-cards">
+    <div class="kaggle-card" onclick="openKaggleModal('anomaly')">
+      <h3>Road Anomaly Detection</h3>
+      <p>Detecting potholes and cracks using deep CNN + autoencoders.</p>
+    </div>
+    <div class="kaggle-card" onclick="openKaggleModal('blood')">
+      <h3>Blood Detection in Crime Scenes</h3>
+      <p>Image segmentation with YOLOv8 for forensic stain classification.</p>
+    </div>
+  </div>
+</section>
+
+
 
   <section id="contact">
     <h2>Contact Me</h2>
@@ -105,6 +255,13 @@
     <p>Connect: <a href="mailto:you@example.com">Email</a> | <a href="https://linkedin.com/in/yourid">LinkedIn</a> | <a href="https://github.com/yourusername">GitHub</a></p>
   </section>
 
+  <section id="qr-contact">
+  <h2>Scan to Save Contact</h2>
+  <div class="qr-box">
+    <img src="images\Rohan Kumar.png" alt="QR Contact Card for Rohan" />
+    <p>Scan with your phone to save my contact instantly!</p>
+  </div>
+</section>
   <footer>
     <p>&copy; 2025 Rohan | All rights reserved.</p>
   </footer>
@@ -118,5 +275,134 @@
       loop: true
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".project-card, .skill"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+    scale: 1.05,
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('radarChart').getContext('2d');
+  const radarChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Python', 'Machine Learning', 'Computer Vision', 'Flask', 'JavaScript', 'HTML', 'CSS'],
+      datasets: [{
+        label: 'Proficiency',
+        data: [95, 90, 85, 80, 75, 85, 80],
+        backgroundColor: 'rgba(96, 165, 250, 0.2)',
+        borderColor: '#60a5fa',
+        pointBackgroundColor: '#38bdf8',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#38bdf8'
+      }]
+    },
+    options: {
+      scales: {
+        r: {
+          angleLines: { color: '#334155' },
+          grid: { color: '#334155' },
+          pointLabels: { color: '#cbd5e1' },
+          ticks: {
+            backdropColor: 'transparent',
+            color: '#f8fafc',
+            stepSize: 20
+          }
+        }
+      },
+      responsive: true,
+      plugins: {
+        legend: {
+          labels: { color: '#38bdf8' }
+        }
+      }
+    }
+  });
+</script>
+
+<div class="assistant-wrapper" onclick="toggleAssistantChat()">
+  <div class="assistant-avatar">
+    <!-- You can replace this emoji with an image or animated SVG -->
+    🤖
+  </div>
+</div>
+
+<div class="assistant-chat" id="assistantChat">
+  <div class="chat-header">Ask Rohan</div>
+  <div class="chat-body" id="assistantLog">
+    <div class="bot-msg">Hello! I'm your assistant. How can I help? 😊</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="assistantInput" placeholder="Ask me..." onkeydown="if(event.key==='Enter'){sendAssistantChat()}" />
+    <button onclick="sendAssistantChat()">➤</button>
+  </div>
+</div>
+<!--replace-->
+<div class="modal-overlay" id="modalOverlay">
+   <div class="modal-content" id="modalContent">
+     <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div id="modalBody"> <!-- Dynamic content inserted via JS --> </div> 
+    </div>
+   </div>
+
+   <!-- GitHub Calendar JS -->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+<script>
+  GitHubCalendar("#github-calendar", "rohan2107-lab", {
+    responsive: true,
+    tooltips: true
+  });
+</script>
+<div class="modal-overlay" id="kaggleModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeKaggleModal()">&times;</span>
+    <h3 id="kaggleModalTitle">Project Title</h3>
+    <p id="kaggleModalDesc">Project description</p>
+    <a id="kaggleModalLink" href="#" target="_blank">View on Kaggle →</a>
+  </div>
+</div>
+<script>
+  function openKaggleModal(project) {
+    const modal = document.getElementById("kaggleModal");
+    const title = document.getElementById("kaggleModalTitle");
+    const desc = document.getElementById("kaggleModalDesc");
+    const link = document.getElementById("kaggleModalLink");
+
+    if (project === "anomaly") {
+      title.textContent = "Road Anomaly Detection";
+      desc.textContent = "Detects cracks/potholes from RDD2022 using EfficientNet-B0 & custom preprocessing.";
+      link.href = "https://www.kaggle.com/yourusername/road-anomaly-detection";
+    } else if (project === "blood") {
+      title.textContent = "Blood Detection in Crime Scenes";
+      desc.textContent = "Classifies presence of blood using YOLOv8, TensorFlow, and OpenCV. Real-world crime analysis.";
+      link.href = "https://www.kaggle.com/yourusername/blood-detection-crime-scene";
+    }
+
+    modal.style.display = "flex";
+  }
+
+  function closeKaggleModal() {
+    document.getElementById("kaggleModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside
+  window.addEventListener("click", (e) => {
+    const modal = document.getElementById("kaggleModal");
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
+<script>
+ window.addEventListener('load', () => { setTimeout(() => { const splash = document.getElementById('splash'); 
+ splash.style.display = 'none'; }, 2600); });
+  </script>
+
 </body>
 </html>
