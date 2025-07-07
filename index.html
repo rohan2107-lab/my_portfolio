@@ -24,182 +24,331 @@
   <span class="blob blob3"></span>
 </div>
 
+ <!-- Hero / Navbar -->
   <header id="hero">
-<nav>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#techradar">Techradar</a></li>
-    <li><a href="#workflow">Workflow</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#timeline">Timeline</a></li>
-    <li><a href="#awards">Awards</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#github">GitHub</a></li>
-    <li><a href="#kaggle">Kaggle</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-toggle" onclick="toggleNav()">☰</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#techradar">Techradar</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#kaggle">Kaggle</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <section class="hero-content">
       <h2>Hi, I'm Rohan</h2>
       <p class="typing"></p>
       <a href="#projects" class="btn">Explore My Work</a>
       <a href="resume.pdf" download class="btn glow-btn">Download Resume</a>
-
     </section>
   </header>
-
+<!-- About Section......... -->
   <section id="about">
     <h2>About Me</h2>
     <div class="about-container">
       <img src="images\ISRO MY PIC.jpg" alt="Rohan's Photo" class="profile-img" />
       <div class="about-text">
         <p>
-          I'm Rohan, a passionate AI and Machine Learning developer with experience in Flask, YOLO, computer vision, and web development. I build solutions that matter.
+ I'm Rohan, a passionate AI and Machine Learning developer with hands-on experience in Flask, YOLO, computer vision, and full-stack web development. I thrive on solving real-world problems through intelligent systems and love crafting sleek, interactive user experiences. Curious by nature and driven by innovation, I constantly explore new technologies—from generative AI to mobile integration. Whether it's building smart assistants or designing end-to-end crime analysis tools, I believe in engineering solutions that make an impact.
         </p>
+
       </div>
     </div>
   </section>
-
+<!-- Skill Section........ -->
   <section id="skills">
     <h2>Skills</h2>
+    
     <div class="skills-grid">
-      <div class="skill"><i class="fab fa-python"></i>Python</div>
-      <div class="skill"><i class="fas fa-brain"></i>Machine Learning</div>
-      <div class="skill"><i class="fas fa-robot"></i>Computer Vision</div>
-      <div class="skill"><i class="fas fa-server"></i>Flask</div>
-      <div class="skill"><i class="fab fa-js"></i>JavaScript</div>
-      <div class="skill"><i class="fab fa-html5"></i>HTML</div>
-      <div class="skill"><i class="fab fa-css3-alt"></i>CSS</div>
+      <div class="workflow-slider">
+      <div class="skill"><i class="rohan"></i>Machine Learning</div>
+      <div class="skill"><i class="rohan"></i>Deep Learning</div>
+      <div class="skill"><i class="rohan"></i>Python</div>
+      <div class="skill"><i class="rohan"></i>Generative AI</div>
+      <div class="skill"><i class="rohan"></i>Computer Vision</div>
+      <div class="skill"><i class="rohan"></i>Flask</div>
+      <div class="skill"><i class="rohan"></i>FastAPI</div>
+      <div class="skill"><i class="rohan"></i>JavaScript</div>
+      <div class="skill"><i class="rohan"></i>HTML</div>
+      <div class="skill"><i class="rohan"></i>CSS</div>
+      <div class="skill"><i class="rohan"></i>DSA</div>
+      <div class="skill"><i class="rohan"></i>C Programing</div>
+      <div class="skill"><i class="rohan"></i>C++ programming</div>
+    </div>
     </div>
   </section>
-
+<!-- Sill Chart.......-->
   <section id="techradar">
   <h2>Tech Stack Radar</h2>
   <canvas id="radarChart" width="400" height="400"></canvas>
 </section>
-
+<!-- Workflow Section.......-->
  <section id="workflow"> 
   <h2>🧑‍💼 My Workflow</h2>
    <div class="workflow-slider"> 
     <div class="workflow-step"> 
       <i class="fas fa-search"></i>
-       <h3>Research</h3> 
+       <h3>1. Research</h3> 
        <p>Every project starts with clearly defining the problem, understanding user intent, and researching existing technologies, datasets, and feasibility.</p> 
       </div>
        <div class="workflow-step">
          <i class="fas fa-project-diagram"></i> 
-         <h3>Design</h3> 
+         <h3>2. Design</h3> 
          <p>I create architecture diagrams, outline model pipelines, and choose tools (Flask, TensorFlow, YOLO, etc.) to best fit the project's scope.</p>
          </div> 
          <div class="workflow-step">
            <i class="fas fa-code"></i>
-            <h3>Build</h3> 
+            <h3>3. Build</h3> 
             <p>From training ML models to building full-stack apps, I write clean, modular code with Git for version control and code hygiene.</p> 
           </div> 
           <div class="workflow-step"> 
             <i class="fas fa-vial"></i>
-             <h3>Test</h3> 
+             <h3>4. Test</h3> 
              <p>I evaluate models on accuracy, optimize UI/UX performance, and run thorough testing for stability and edge-case handling.</p>
              </div>
               <div class="workflow-step">
                  <i class="fas fa-rocket"></i>
-                  <h3>Deploy</h3> 
+                  <h3>5. Deploy</h3> 
                   <p>Using platforms like Netlify, Render, or Vercel, I deploy and monitor usage, collect feedback, and iterate for continuous improvement.</p> 
                 </div> 
               </div> 
             </section>
+  <!-- Project Section......-->
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Crime Detection System</h3>
-        <p>AI-powered app using YOLOv8 and Flask for crime image analysis.</p>
-        <a href="#">GitHub</a> | <a href="#">Live</a>
+    <div class="workflow-slider"> 
+
+      <div class="project-card" onclick="openModal('crime')"> 
+  <h3>Crime Detection System</h3>
+  <p>AI-powered web app built with YOLOv8 and Flask to analyze and detect crime scenes from images.</p>
+</div> 
+
+<div class="project-card" onclick="openModal('riya')"> 
+  <h3>R.I.Y.A Voice Assistant</h3> 
+  <p>Smart voice assistant with a modern dashboard UI, powered by Python and speech recognition.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('road-anomaly')"> 
+  <h3>Road Anomaly Detection</h3> 
+  <p>Detects potholes and road damage using YOLOv8 and Autoencoders on real-world datasets.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('weapon-detection')"> 
+  <h3>Weapon Detection System</h3> 
+  <p>Object detection system trained with Faster R-CNN (Detectron2) to identify weapons in images and videos.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('voting-system')"> 
+  <h3>Face Recognition Voting System</h3> 
+  <p>Flask-based system using OpenCV and KNN for face recognition and secure voting with Aadhar-based ID.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('steganography')"> 
+  <h3>Image Steganography Tool</h3> 
+  <p>Hide and detect secret messages in images using LSB technique and CNN-based stego detection.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('finguard')"> 
+  <h3>FinGuard – Financial Literacy App</h3> 
+  <p>AI-powered mobile app with gamified learning, fraud simulations, and a smart chatbot for financial awareness.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('hospital-advisor')"> 
+  <h3>Hospital Resource Allocation Advisor</h3> 
+  <p>ML-powered advisor for predicting test results, assigning rooms, and clustering patients based on severity.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('landslice')"> 
+  <h3>Landslide Prediction Model</h3> 
+  <p>Hybrid ML-DL system using Transformers and Logistic Regression to forecast landslides using geological and meteorological data.</p> 
+</div>
+
+<div class="project-card" onclick="openModal('fake-news')"> 
+  <h3>Fake News Detection System</h3> 
+  <p>Machine learning classifier using TF-IDF, Logistic Regression, and SVM to identify fake news articles.</p> 
+</div>
+
       </div>
-      <div class="project-card">
-        <h3>R.I.Y.A Voice Assistant</h3>
-        <p>AI voice assistant with futuristic UI and voice response.</p>
-        <a href="#">GitHub</a> | <a href="#">Live</a>
-      </div>
-    </div>
-    <!--replace-->
-    <div class="project-card" onclick="openModal('crime')"> 
-      <h3>Crime Detection System</h3>
-       <p>AI-powered app using YOLOv8 and Flask for crime image analysis.</p>
-       </div> 
-       <div class="project-card" onclick="openModal('riya')"> 
-        <h3>R.I.Y.A Voice Assistant</h3> 
-        <p>AI voice assistant with futuristic UI and voice response.</p> 
       </div>
   </section>
-
+<!-- my journey section..-->
   <section id="timeline">
     <h2>My Journey</h2>
+    <div class="timeline-scroll">
     <ul class="timeline">
-      <li><strong>2022</strong>: Started with Python and web development</li>
-      <li><strong>2023</strong>: Built ML/AI projects and Flask apps</li>
-      <li><strong>2024</strong>: Created R.I.Y.A, participated in hackathons</li>
-      <li><strong>2025</strong>: Launching full portfolio and product demos</li>
-    </ul>
+  <li class="timeline-item"><strong>2014</strong>: Began my academic journey at Jawahar Navodaya Vidyalaya (JNV), Supaul.</li>
+  <li class="timeline-item"><strong>2018</strong>: Cracked the National Mathematics Olympiad — a key milestone that nurtured my analytical and logical thinking.</li>
+  <li class="timeline-item"><strong>2019</strong>: Completed 10th from JNV Supaul with distinction and strong foundational skills in math and science.</li>
+  <li class="timeline-item"><strong>2019–2021</strong>: Pursued senior secondary education with PCM stream, delved deeper into physics, math, and computer basics.</li>
+  <li class="timeline-item"><strong>2022</strong>: Admitted to I.K. Gujral Punjab Technical University (IKGPTU), started B.Tech in Computer Science & Engineering.</li>
+  <li class="timeline-item"><strong>2022</strong>: Kickstarted my coding journey with Python and web technologies like HTML, CSS, and JavaScript.</li>
+  <li class="timeline-item"><strong>2023</strong>: Explored AI/ML through hands-on projects — implemented image classification, YOLO object detection, and gender/age prediction.</li>
+  <li class="timeline-item"><strong>2023</strong>: Built multiple Flask-based applications including a crime scene analyzer and blood detection model using OpenCV.</li>
+  <li class="timeline-item"><strong>2024</strong>: Designed and developed R.I.Y.A — an intelligent voice assistant with speech synthesis, animated UI, and contextual help.</li>
+  <li class="timeline-item"><strong>2024</strong>: Participated in inter-college hackathons, published blogs on ML pipelines and generative AI use cases.</li>
+  <li class="timeline-item"><strong>2024</strong>: Contributed to GitHub and Kaggle actively — sharing code, notebooks, and AI use cases for crime tech and anomaly detection.</li>
+  <li class="timeline-item"><strong>2025</strong>: Launched my animated portfolio with chatbot, QR contact card, tech radar, blogs, and modal-based project demos.</li>
+  <li class="timeline-item"><strong>2025</strong>: Currently exploring advanced topics like GANs, autonomous systems, and contributing to open-source ML projects.</li>
+</ul>
+</div>
   </section>
-
+<!-- Awards section....-->
   <section id="awards">
     <h2>Awards & Hackathons</h2>
-    <ul>
-      <li>🏆 Winner - Smart India Hackathon 2024</li>
-      <li>🏅 Finalist - AI for Good Challenge</li>
+    <div class="timeline-scroll">
+    <ul class="award-list">
+    <li>🚀 Currently Participating – PSB Hackathon 2025 (Building a Financial Protection App)</li>
+    <li>🔍 Qualified – Regional Mathematics Olympiad (RMO) 2018</li>
+    <li>🏫 Gold Medal – JNV Annual Science Exhibition (2017)</li>
+    <li>🧠 School Topper – National Cyber Olympiad (2016)</li>
+    <li>💡 1st Prize – District Innovation Challenge (2019)</li>
     </ul>
+    </div>
   </section>
-
+<!-- Blog Section....-->
 <section id="blog">
   <h2>My Blog</h2>
   <div class="blog-grid">
     <div class="workflow-slider">
-    <div class="blog-card">
-      <h3>Building R.I.Y.A – My Voice Assistant Journey</h3>
-      <p>A deep dive into building a futuristic voice assistant with Flask, speech recognition, and animated UI.</p>
-      <a href="https://yourbloglink.com/riya-journey" target="_blank">Read More →</a>
-    </div>
-    <div class="blog-card">
-      <h3>YOLOv8 in Real-World Crime Detection</h3>
-      <p>How I used computer vision for analyzing crime scenes using YOLO and OpenCV in Python.</p>
-      <a href="https://yourbloglink.com/yolo-crime" target="_blank">Read More →</a>
-    </div>
-    <div class="blog-card">
-      <h3>Top 5 ML Projects to Impress in 2025</h3>
-      <p>My list of machine learning projects that combine innovation, deployment, and impact.</p>
-      <a href="https://yourbloglink.com/top-ml-2025" target="_blank">Read More →</a>
-    </div>
 
-  </div>
+      <div class="blog-card">
+        <h3>Building R.I.Y.A – My Voice Assistant Journey</h3>
+        <p>A deep dive into building a futuristic voice assistant with Flask, speech recognition, and animated UI.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>YOLOv8 in Real-World Crime Detection</h3>
+        <p>How I used computer vision for analyzing crime scenes using YOLO and OpenCV in Python.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Top 5 ML Projects to Impress in 2025</h3>
+        <p>My list of machine learning projects that combine innovation, deployment, and impact.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Weapon Detection with Faster R-CNN</h3>
+        <p>Exploring Detectron2 and training a custom Faster R-CNN model for detecting weapons in surveillance footage.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Image Steganography Using Deep Learning</h3>
+        <p>Combining LSB steganography and CNNs for detecting hidden messages in images — a step toward secure communication.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Smart Voting System Using Face Recognition</h3>
+        <p>How I built a secure, KNN-powered voting system using face detection and Python for real-time polling.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Road Anomaly Detection with YOLOv8</h3>
+        <p>A deep dive into training YOLOv8 to detect cracks, potholes, and road damage using the RDD2022 dataset.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Landslide Prediction Using Hybrid Models</h3>
+        <p>How I combined Transformers and Logistic Regression for accurate prediction of landslides using multivariate data.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>FinGuard – Building a Financial Literacy App</h3>
+        <p>Behind the scenes of creating FinGuard: a gamified mobile app that teaches financial literacy with AI and chatbots.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Crime Scene Reporting Web App with Flask</h3>
+        <p>Creating a secure web platform for submitting, storing, and analyzing crime reports using Flask and MySQL.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Gender Detection Using Deep Learning</h3>
+        <p>How I built a gender prediction model and integrated it into a web application for crime analysis enhancement.</p>
+        <a href="rohan.html" target="_blank">Read More →</a>
+      </div>
+
+    </div>
   </div>
 </section>
-
-
+<!-- Tarif Section....-->
   <section id="testimonials">
   <h2>Testimonials</h2>
   <div class="testimonial-grid">
+    <div class="workflow-slider">
     <div class="testimonial-card">
-      <p>"Rohan is one of the most creative and driven AI developers I’ve worked with. His work on the crime detection system was exceptional."</p>
-      <h4>— Dr. Anjali Mehra</h4>
-      <span>Professor, Data Science</span>
+      <p>"Rohan’s work on our blood detection and crime analytics tools was not just technically sound but highly impactful. He brings clarity and innovation to every AI project."</p>
+      <h4>— Final Year Project Guide</h4>
+      <span>Faculty, IKGPTU</span>
     </div>
+
     <div class="testimonial-card">
-      <p>"His passion for learning and solving real-world problems with ML and Flask is inspiring. A future tech leader for sure."</p>
-      <h4>— Rajat Sharma</h4>
-      <span>Senior Engineer, TCS</span>
+      <p>"During the PSB Hackathon 2025, Rohan consistently brought strategic thinking, coding excellence, and collaborative energy to our team. A true tech innovator."</p>
+      <h4>— Hackathon Team Member</h4>
+      <span>Teammate, PSB Hackathon</span>
     </div>
+
     <div class="testimonial-card">
-      <p>"Rohan was a standout contributor in our hackathon team. Always reliable, innovative, and focused."</p>
-      <h4>— Ayesha Khan</h4>
-      <span>Hackathon Teammate</span>
+      <p>"From Flask apps to YOLO-based detection systems, Rohan has an exceptional command of full-stack AI development. His GitHub contributions reflect depth and purpose."</p>
+      <h4>— Peer Reviewer</h4>
+      <span>Open Source Collaborator</span>
     </div>
+
+    <div class="testimonial-card">
+  <p>"Rohan's work on R.I.Y.A was incredibly impressive — the assistant UI and voice engine integration clearly showed a great blend of tech and design."</p>
+  <h4>— Ayush Anand</h4>
+  <span>UX Engineer, Project Collaborator</span>
+</div>
+
+<div class="testimonial-card">
+  <p>"In our PSB Hackathon 2025 team, Rohan was the brain behind integrating ML into financial safety — his contribution turned ideas into reality."</p>
+  <h4>— Priya Singh</h4>
+  <span>Hackathon Teammate</span>
+</div>
+
+<div class="testimonial-card">
+  <p>"Rohan has the rare ability to turn complex AI models into user-friendly tools. His crime scene detection demo using YOLO and Flask was remarkable."</p>
+  <h4>— Ms. Pallavi</h4>
+  <span>Project Instructor</span>
+</div>
+
+<div class="testimonial-card">
+  <p>"From AI pipelines to stylish portfolio design, Rohan handles both backend and frontend with finesse. Truly a full-stack innovator."</p>
+  <h4>— Meenal Kaur</h4>
+  <span>Open Source Reviewer</span>
+</div>
+
+<div class="testimonial-card">
+  <p>"I've seen Rohan help juniors on GitHub and Kaggle — he’s not only skilled but also a community-minded developer."</p>
+  <h4>— Rahul Prasad</h4>
+  <span>ML Community Peer</span>
+</div>
+
+</div>
   </div>
 </section>
 
-
+<!-- GitHub Section....-->
   <section id="github">
     <h2>GitHub Stats</h2>
     <img src="https://github-readme-stats.vercel.app/api?username=rohan2107-lab&show_icons=true" alt="GitHub Stats">
@@ -209,52 +358,69 @@
   <h2>My GitHub Contributions</h2>
   <div id="github-calendar"></div>
 </section>
-
+<!-- Kaggle Section....-->
 <section id="kaggle">
   <h2>My Kaggle Work</h2>
   <div class="kaggle-cards">
-    <div class="kaggle-card">
-      <h3>Road Anomaly Detection</h3>
-      <p>Built using EfficientNet and U-Net to classify road defects. Fast execution & high accuracy.</p>
-      <a href="https://www.kaggle.com/rohan2107/road-anomaly-detection" target="_blank">View Notebook →</a>
-    </div>
-    <div class="kaggle-card">
-      <h3>Blood Detection in Crime Scenes</h3>
-      <p>Used image segmentation and object detection to classify blood stains with YOLOv8 & OpenCV.</p>
-      <a href="https://www.kaggle.com/rohan2107/blood-detection-crime-scene" target="_blank">View Notebook →</a>
-    </div>
-  </div>
-  <a href="https://www.kaggle.com/rohan2107" target="_blank">
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
-</a>
-</section>
-
-<section id="kaggle">
-  <h2>My Kaggle Work</h2>
-  <div class="kaggle-cards">
+    <div class="workflow-slider">
     <div class="kaggle-card" onclick="openKaggleModal('anomaly')">
       <h3>Road Anomaly Detection</h3>
       <p>Detecting potholes and cracks using deep CNN + autoencoders.</p>
     </div>
+
     <div class="kaggle-card" onclick="openKaggleModal('blood')">
       <h3>Blood Detection in Crime Scenes</h3>
       <p>Image segmentation with YOLOv8 for forensic stain classification.</p>
     </div>
+
+    <div class="kaggle-card" onclick="openKaggleModal('gender-age')">
+      <h3>Gender & Age Detection</h3>
+      <p>Facial analysis using MTCNN and CNN for demographic profiling.</p>
+    </div>
+
+    <div class="kaggle-card" onclick="openKaggleModal('weapons')">
+      <h3>Weapon Detection</h3>
+      <p>YOLOv5-based firearm detection system with bounding box output.</p>
+    </div>
+
+    <div class="kaggle-card" onclick="openKaggleModal('riya-voice')">
+      <h3>R.I.Y.A Voice Assistant</h3>
+      <p>Flask-based assistant with voice input/output and AI command execution.</p>
+    </div>
+
+    <div class="kaggle-card" onclick="openKaggleModal('anomaly-gan')">
+      <h3>Anomaly Detection with GAN</h3>
+      <p>Trained GANs for structural anomaly detection in road surfaces.</p>
+    </div>
+
+    </div>
+  </div>
+  <div class="kaggle-profile">
+  <a href="https://www.kaggle.com/rohan2107" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+  </a>
+</div>
+</section>
+<!-- contact me Section (Hamse baat kare..)....-->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to collaborate, hire, or simply want to say hi — feel free to reach out!</p>
+   <form action="https://formspree.io/f/mrbkwgnk" method="POST" id="contact-form">
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit" class="btn glow-btn">Send Message</button>
+    <p id="form-status" class="form-status"></p>
+  </form>
+
+  <div class="contact-links">
+    <p>Also connect with me on:</p>
+    <a href="mailto:rohan2224521@gmail.com" target="_blank">📧 Email</a> |
+    <a href="https://www.linkedin.com/in/rohan-kumar-ba53772ab" target="_blank">🔗 LinkedIn</a> |
+    <a href="https://github.com/rohan2107-lab" target="_blank">🐙 GitHub</a> |
+    <a href="https://www.kaggle.com/rohan2107" target="_blank">📊 Kaggle</a>
   </div>
 </section>
-
-
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-    <p>Connect: <a href="mailto:you@example.com">Email</a> | <a href="https://linkedin.com/in/yourid">LinkedIn</a> | <a href="https://github.com/yourusername">GitHub</a></p>
-  </section>
-
+<!-- QR section....-->
   <section id="qr-contact">
   <h2>Scan to Save Contact</h2>
   <div class="qr-box">
@@ -262,14 +428,27 @@
     <p>Scan with your phone to save my contact instantly!</p>
   </div>
 </section>
+<!-- laat wala section....-->
   <footer>
-    <p>&copy; 2025 Rohan | All rights reserved.</p>
+    <p>&copy; 2025 Rohan | Sab mera hai...</p>
   </footer>
+  <!-- yaha se JS ka kriya- karam...........-->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var typed = new Typed(".typing", {
-      strings: ["AI/ML Developer", "Full-Stack Engineer", "Innovator"],
+      strings: ["AI/ML Developer",
+      "Full-Stack Engineer",
+      "Computer Vision Enthusiast",
+      "Open Source Contributor",
+      "Kaggle Competitor",
+      "Innovative Problem Solver",
+      "Generative AI Explorer",
+      "Flask & FastApI Explorer",
+      "Deep Learning Practitioner",
+      "Mobile App Innovator",
+      "Tech Blogger",
+      "Data-Centric Creator"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true
@@ -292,10 +471,10 @@
   const radarChart = new Chart(ctx, {
     type: 'radar',
     data: {
-      labels: ['Python', 'Machine Learning', 'Computer Vision', 'Flask', 'JavaScript', 'HTML', 'CSS'],
+      labels: ['Python', 'Machine Learning', 'Computer Vision', 'Flask', 'JavaScript', 'HTML', 'CSS','Deep Learning','Genarative AI','FastAPI','DSA','C','C++'],
       datasets: [{
         label: 'Proficiency',
-        data: [95, 90, 85, 80, 75, 85, 80],
+        data: [95, 90, 85, 80, 75, 85, 80, 80, 70, 70, 70, 75, 80],
         backgroundColor: 'rgba(96, 165, 250, 0.2)',
         borderColor: '#60a5fa',
         pointBackgroundColor: '#38bdf8',
@@ -330,8 +509,9 @@
 <div class="assistant-wrapper" onclick="toggleAssistantChat()">
   <div class="assistant-avatar">
     <!-- You can replace this emoji with an image or animated SVG -->
-    🤖
+    <img src="images\bot.jpg" alt="Assistant Avatar" />
   </div>
+  <div class="bot-bubble">Hi, need any help?</div>
 </div>
 
 <div class="assistant-chat" id="assistantChat">
@@ -403,6 +583,77 @@
  window.addEventListener('load', () => { setTimeout(() => { const splash = document.getElementById('splash'); 
  splash.style.display = 'none'; }, 2600); });
   </script>
+<!-- Nav Toggle Script -->
+  <script>
+    function toggleNav() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
 
+    // Splash fade out (already part of your original code)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const splash = document.getElementById('splash');
+        splash.style.display = 'none';
+      }, 2600);
+    });
+  </script>
+  <!--bot section-->
+  <audio id="botGreeting" src="/static/sounds/assistant-greeting.mp3" preload="auto"></audio>
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('botGreeting').play().catch(() => {});
+  });
+</script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.querySelector(".bot-bubble").style.opacity = "1";
+    }, 3000); // appear after 3 seconds
+  });
+</script>
+<!-- for timeline--> 
+ <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    root: document.querySelector('.timeline-scroll'),
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    observer.observe(item);
+  });
+</script>
+<!-- form handle kar rehe hai..-->
+ <script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      status.innerHTML = "✅ Message sent successfully!";
+      form.reset();
+    } else {
+      status.innerHTML = "❌ There was a problem. Please try again.";
+    }
+
+    status.classList.add("show");
+    setTimeout(() => status.classList.remove("show"), 4000);
+  });
+</script>
 </body>
 </html>
