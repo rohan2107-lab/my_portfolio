@@ -1036,3 +1036,28 @@ color: #cbd5e1;
 .typed-cursor {
   display: none !important;
 }
+@media (max-width: 768px) {
+  .workflow-slider {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+  }
+
+  .workflow-step,
+  .project-card,
+  .skill,
+  .testimonial-card,
+  .blog-card,
+  .kaggle-card {
+    scroll-snap-align: none; /* Remove horizontal snap */
+    width: 100%; /* Make items fill the container */
+  }
+}
+#github img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
